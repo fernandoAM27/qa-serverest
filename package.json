@@ -1,0 +1,21 @@
+{
+  "name": "qa-serverest-playwright",
+  "version": "1.0.0",
+  "description": "Testes de API com Playwright + JavaScript contra o ServeRest, executados em CI com GitHub Actions",
+  "scripts": {
+    "serverest": "serverest --timeout 999999",
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "^1.63.0",
+    "dotenv": "^17.4.2",
+    "serverest": "^3.2.2"
+  },
+  "private": true
+}
