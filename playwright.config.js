@@ -17,4 +17,9 @@ module.exports = defineConfig({
   projects: [
     { name: 'api', testDir: './tests/api' },
   ],
+  webServer: {
+    command: 'npm run serverest',
+    url: 'http://localhost:3000/usuarios',
+    reuseExistingServer: true,
+  },
 });
